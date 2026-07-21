@@ -1,0 +1,44 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Leitor OCR
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Leitor OCR</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div class="container">
+    @if (digitalLine) {
+    <div class="div-ticket ion-text-center">
+      @if (ticketUrl) {
+      <img class="ticket" height="200px" [src]="ticketUrl" />
+      } @else {
+      <ion-thumbnail slot="start">
+        <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+      </ion-thumbnail>
+      }
+      <br>
+      <p>Linha Digitável:<br>{{digitalLine}}</p>
+    </div>
+    }
+
+    <ion-button (click)="capture()">
+      @switch (feedback) {
+      @case ('success') {
+      Capturar outra imagem
+      }
+      @case ('error') {
+      Tentar novamente
+      }
+      @default {
+      Capturar imagem
+      }
+      }
+    </ion-button>
+  </div>
+</ion-content>

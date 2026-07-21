@@ -1,0 +1,60 @@
+ion-content {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-between;
+  height: 100%;
+
+
+  .container {
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    ion-button {
+      margin: 20px 0 56px 0;
+    }
+
+    .div-ticket {
+      padding: 20vh 0;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .ticket {
+        height: fit-content;
+        max-height: 300px;
+        max-width: 250px;
+        &::ng-deep {
+          border-radius: 5px;
+        }
+      }
+
+      ion-thumbnail {
+        height: 300px;
+        width: 250px;
+
+        ion-skeleton-text {
+          &::ng-deep {
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #8c8c8c;
+
+    margin: 0;
+  }
+
+}

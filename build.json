@@ -1,0 +1,10 @@
+{
+  "android": {
+    "release": {
+      "keystore": "cordova-ocr-app.keystore",
+      "storePassword": "0cR#App$Cordov4",
+      "alias": "cordova-ocr-app",
+      "password": "0cR#App$Cordov4"
+    }
+  }
+}

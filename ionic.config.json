@@ -1,0 +1,7 @@
+{
+  "name": "cordova-ocr-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
