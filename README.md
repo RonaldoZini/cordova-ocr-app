@@ -36,10 +36,11 @@
 - Gradle ```9.0.0```
 - Java JDK ```17 ou superior```
 
-<br>
 <b>Instalação:</b>
-<br><br>
+
+
 Clone o projeto:
+
 ```
 git clone https://github.com/RonaldoZini/cordova-ocr-app
 cd cordova-ocr-app
